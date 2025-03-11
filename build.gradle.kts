@@ -1,3 +1,6 @@
+// For anonymous service without DB connection: https://start.spring.io/#!type=gradle-project-kotlin&language=java&platformVersion=3.4.2&packaging=jar&jvmVersion=17&groupId=org.newlife&artifactId=iso8583parser&name=iso8583parser&description=iso8583parser&packageName=org.newlife.iso8583parser&dependencies=web,lombok
+// Gradle User Manual: https://docs.gradle.org/current/userguide/userguide.html
+
 plugins {
 	java
 	id("org.springframework.boot") version "3.4.2"

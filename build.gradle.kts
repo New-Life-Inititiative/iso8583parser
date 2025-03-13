@@ -7,8 +7,8 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.7"
 }
 
-group = "com.newlife"
-version = "0.0.1-SNAPSHOT"
+group = "org.newlife"
+version = "1.0.0-SNAPSHOT"
 
 java {
 	toolchain {
@@ -23,7 +23,22 @@ configurations {
 }
 
 repositories {
+	mavenLocal()
 	mavenCentral()
+}
+
+bootJar {
+	archiveFileName = "iso8583parser-${version}.jar"
+	manifest {
+		attributes(
+			'Implementation-Title': 'ISO8583Parser',
+			'Implementation-Version': version
+		)
+	}
+}
+
+jar {
+	enabled = false
 }
 
 dependencies {

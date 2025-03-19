@@ -77,7 +77,7 @@ public class ISO87APackagerForVISA extends ISOBasePackager {
             /*031*/ new IFA_AMOUNT  (  9, "AMOUNT, SETTLEMENT PROCESSING FEE"),
             /*032*/ new IFA_LLCHAR  ( 99, "ACQUIRING INSTITUTION IDENT CODE"), // old: IFA_LLNUM - len: 11
             /*033*/ new IFA_LLNUM   ( 11, "FORWARDING INSTITUTION IDENT CODE"),
-            /*034*/ new IFA_LLCHAR  ( 28, "PAN EXTENDED"),
+            /*034*/ new IFA_LLLCHAR (999, "PAN EXTENDED"),
             /*035*/ new IFA_LLCHAR  ( 99, "TRACK 2 DATA"),  // old: IFA_LLNUM - len: 37
             /*036*/ new IFA_LLLCHAR (104, "TRACK 3 DATA"),
             /*037*/ new IF_CHAR     ( 12, "RETRIEVAL REFERENCE NUMBER"),
